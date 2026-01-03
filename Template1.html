@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Vision | Minimalist About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            letter-spacing: -0.01em;
+        }
+        .hero-bright {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                              url('https://images.unsplash.com/photo-1554744512-d6c603f27c54?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+            <div class="font-semibold text-lg tracking-tight uppercase">EV Vision</div>
+            
+            <div class="hidden md:flex space-x-8 text-[13px] font-medium text-slate-500 uppercase tracking-widest">
+                <a href="#" class="hover:text-black transition-colors">Home</a>
+                <a href="#" class="text-black">About</a>
+                <a href="#" class="hover:text-black transition-colors">Trends</a>
+                <a href="#" class="hover:text-black transition-colors">Contact</a>
+            </div>
+            
+            <a href="#" class="text-[13px] font-bold border-b-2 border-black pb-1 hover:text-slate-500 hover:border-slate-500 transition-all">
+                GET STARTED
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero-bright h-[70vh] flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full">
+            <div class="max-w-xl">
+                <span class="text-xs font-bold uppercase tracking-[0.3em] text-slate-400 mb-4 block">Introduction</span>
+                <h1 class="text-5xl md:text-6xl font-light text-slate-900 mb-6 leading-tight">
+                    About <span class="font-semibold italic text-blue-600">us.</span>
+                </h1>
+                <p class="text-slate-600 text-lg leading-relaxed font-light">
+                    We are redefining the future of sustainable transportation through minimalist design and advanced electric engineering.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=1000" 
+                     alt="Clean EV" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+            </div>
+            <div>
+                <h2 class="text-3xl font-normal mb-6 tracking-tight">Future Trends in<br><span class="font-semibold">Electric Vehicles</span></h2>
+                <p class="text-slate-500 mb-10 text-sm leading-relaxed max-w-md">
+                    Innovations in battery density and charging infrastructure are making zero-emission travel more accessible than ever before.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-5 h-5 rounded-full border border-blue-500 flex items-center justify-center mt-1">
+                            <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                        </div>
+                        <p class="text-sm text-slate-700"><span class="font-bold">Innovation:</span> Modern charging grids are becoming decentralized.</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-5 h-5 rounded-full border border-blue-500 flex items-center justify-center mt-1">
+                            <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                        </div>
+                        <p class="text-sm text-slate-700"><span class="font-bold">Sustainability:</span> Recyclable materials are now the industry standard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-[0.5em] text-slate-400 mb-2">Our Core Pillars</h2>
+        </div>
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div class="text-center">
+                <div class="text-4xl font-light mb-4 text-blue-600">01</div>
+                <h3 class="font-semibold text-sm uppercase tracking-widest mb-2">Innovation</h3>
+                <p class="text-slate-500 text-xs leading-relaxed">Pioneering software that optimizes energy consumption in real-time.</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-light mb-4 text-blue-600">02</div>
+                <h3 class="font-semibold text-sm uppercase tracking-widest mb-2">Sustainability</h3>
+                <p class="text-slate-500 text-xs leading-relaxed">Ensuring every component is part of a circular economy.</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-light mb-4 text-blue-600">03</div>
+                <h3 class="font-semibold text-sm uppercase tracking-widest mb-2">Centricity</h3>
+                <p class="text-slate-500 text-xs leading-relaxed">Designing experiences around human needs, not just hardware.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-6 border-l border-slate-200 pl-12">
+            <p class="text-3xl font-light text-slate-800 leading-snug mb-8">
+                "Electric cars are a game-changer for eco-friendly transportation. They offer smooth rides, lower emissions, and reduced fuel costs."
+            </p>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-slate-200"></div>
+                <span class="font-semibold text-sm">Alex McLaren — Lead Strategist</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-light mb-4">Get in touch with us</h2>
+            <p class="text-slate-500 mb-10 font-light">Connect with our team to learn more about the future of EVs.</p>
+            
+            <form class="flex flex-col sm:flex-row gap-0 border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+                <input type="email" placeholder="Email address" 
+                       class="flex-1 px-6 py-4 bg-white text-sm focus:outline-none">
+                <button type="submit" class="bg-slate-900 text-white px-8 py-4 text-sm font-semibold hover:bg-black transition-colors">
+                    SUBMIT
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center text-[11px] font-bold text-slate-400 uppercase tracking-widest">
+            <div>© 2026 EV VISION</div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-black">Privacy</a>
+                <a href="#" class="hover:text-black">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
