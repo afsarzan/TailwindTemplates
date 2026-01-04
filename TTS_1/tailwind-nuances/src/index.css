@@ -1,3 +1,8 @@
+/* At the top of index.css */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap');
+@import "tailwindcss";
+
+/* ... rest of your config ... */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -64,5 +69,59 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+/* 1. Define your Theme Variables */
+@theme {
+  /* Colors from your brand guide */
+  --color-primary: #311081;
+  --color-secondary: #1c1629;
+  --color-link: #0000ee;
+  
+  --color-surface-white: #ffffff;
+  --color-surface-lavender: #ebeaf6;
+  --color-surface-purple: #f6f1fc;
+  --color-surface-mist: #f0f0ff;
+  --color-surface-cream: #f6ecdd;
+  --color-surface-tan: #d1cabd;
+  --color-surface-dark: #000000;
+
+  /* Typography */
+  --font-satoshi: "Satoshi", sans-serif;
+
+  /* Custom Font Sizes & Line Heights */
+  --text-h1: 86px;
+  --text-h2: 44px;
+  --text-h3: 24px;
+  --text-body-xs: 12px;
+
+  --leading-h1: 94.6px;
+  --leading-h2: 61.6px;
+  --leading-h3: 28.8px;
+}
+
+/* 2. Apply Base Styles */
+@layer base {
+  body {
+    /* Uses variables defined above */
+    @apply bg-surface-white text-surface-dark font-sans antialiased;
+  }
+  
+  h1 {
+    @apply font-satoshi text-h1 text-secondary leading-h1 font-normal;
+  }
+  
+  h2 {
+    @apply font-satoshi text-h2 text-secondary leading-h2 font-normal;
+  }
+  
+  h3 {
+    @apply font-satoshi text-h3 text-surface-dark leading-h3 font-normal;
+  }
+  
+  p {
+    @apply text-body-xs;
   }
 }
