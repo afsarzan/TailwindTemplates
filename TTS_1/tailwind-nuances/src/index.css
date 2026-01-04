@@ -2,77 +2,6 @@
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap');
 @import "tailwindcss";
 
-/* ... rest of your config ... */
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-
 /* 1. Define your Theme Variables */
 @theme {
   /* Colors from your brand guide */
@@ -110,37 +39,14 @@ button:focus-visible {
   --color-brand-gray: #F3F4F6; /* Gray-100 */
 }
 
-/* 2. Apply Base Styles */
-@layer base {
-  body {
-    /* Uses variables defined above */
-    @apply bg-surface-white text-surface-dark font-sans antialiased;
+  /* Custom Styles */
+  .nav-link {
+      @apply relative inline-block py-2 text-gray-300 font-medium transition-colors hover:text-white;
   }
-  
-  h1 {
-    @apply font-satoshi text-h1 text-secondary leading-h1 font-normal;
+  .nav-link::after {
+      content: '';
+      @apply absolute bottom-0 left-0 w-full h-0.5 bg-brand-yellow transform scale-x-0 transition-transform origin-right duration-300;
   }
-  
-  h2 {
-    @apply font-satoshi text-h2 text-secondary leading-h2 font-normal;
+  .nav-link:hover::after {
+      @apply scale-x-100 origin-left;
   }
-  
-  h3 {
-    @apply font-satoshi text-h3 text-surface-dark leading-h3 font-normal;
-  }
-  
-  p {
-    @apply text-body-xs;
-  }
-}
-        /* Custom Styles */
-        .nav-link {
-            @apply relative inline-block py-2 text-gray-300 font-medium transition-colors hover:text-white;
-        }
-        .nav-link::after {
-            content: '';
-            @apply absolute bottom-0 left-0 w-full h-0.5 bg-brand-yellow transform scale-x-0 transition-transform origin-right duration-300;
-        }
-        .nav-link:hover::after {
-            @apply scale-x-100 origin-left;
-        }

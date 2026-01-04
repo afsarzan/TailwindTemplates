@@ -1,13 +1,16 @@
 import './App.css'
 import Navigation from './components/navigation';
-
+import HeroSection from './components/HeroSection';
+import Services from './components/Services';
 
 function App() {
 
   return (
-    <div className="font-sans text-gray-600 bg-white antialiased selection:bg-brand-yellow selection:text-brand-dark">
-    <Navigation></Navigation>
-    </div>
+    <>
+      <Navigation></Navigation>
+      <HeroSection></HeroSection>
+      <Services></Services>
+    </>
   )
 }
 

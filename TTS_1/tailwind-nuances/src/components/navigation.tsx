@@ -1,12 +1,12 @@
 const Navigation = () => {
   return (
-    <div> <nav className="fixed top-0 left-0 w-full bg-brand-dark/95 backdrop-blur text-white z-50 shadow-lg border-b border-gray-800">
+    <nav className="fixed top-0 left-0 w-full bg-brand-dark/95 backdrop-blur text-white z-50 shadow-lg border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-20">
                 {/* <!-- Logo --> */}
                 <div className="shrink-0">
                     <a href="#" className="text-2xl font-extrabold tracking-tight">
-                        CONSULT<span className="text-brand-yellow">PRO</span>
+                        FAS<span className="text-brand-yellow">PRO</span>
                     </a>
                 </div>
                 
@@ -28,7 +28,7 @@ const Navigation = () => {
                 </div>
             </div>
         </div>
-    </nav></div>
+    </nav>
   )
 }
 
