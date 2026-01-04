@@ -100,6 +100,14 @@ button:focus-visible {
   --leading-h1: 94.6px;
   --leading-h2: 61.6px;
   --leading-h3: 28.8px;
+
+  --font-sans: 'Inter', sans-serif;
+
+  /* Custom Brand Colors */
+  --color-brand-yellow: #EAB308; /* Yellow-500 equivalent */
+  --color-brand-yellow-light: #FEF08A; /* Yellow-200 */
+  --color-brand-dark: #111827; /* Gray-900 */
+  --color-brand-gray: #F3F4F6; /* Gray-100 */
 }
 
 /* 2. Apply Base Styles */
@@ -125,3 +133,14 @@ button:focus-visible {
     @apply text-body-xs;
   }
 }
+        /* Custom Styles */
+        .nav-link {
+            @apply relative inline-block py-2 text-gray-300 font-medium transition-colors hover:text-white;
+        }
+        .nav-link::after {
+            content: '';
+            @apply absolute bottom-0 left-0 w-full h-0.5 bg-brand-yellow transform scale-x-0 transition-transform origin-right duration-300;
+        }
+        .nav-link:hover::after {
+            @apply scale-x-100 origin-left;
+        }
