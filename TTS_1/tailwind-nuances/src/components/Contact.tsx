@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Contact = () => {
   return (
      <section id="contact" className="py-24 bg-brand-gray">
@@ -56,7 +54,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <label className="block text-sm font-bold text-brand-dark mb-2">Message</label>
-                            <textarea rows="4" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow transition" placeholder="How can we help you?"></textarea>
+                            <textarea  className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow transition" placeholder="How can we help you?"></textarea>
                         </div>
                         <button type="button" className="w-full bg-brand-dark text-white font-bold py-4 rounded-lg hover:bg-brand-yellow hover:text-brand-dark transition duration-300 transform hover:-translate-y-1">
                             Send Message

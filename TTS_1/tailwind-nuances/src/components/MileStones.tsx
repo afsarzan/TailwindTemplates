@@ -1,5 +1,3 @@
-import React from 'react'
-
 const MileStones = () => {
   return (
      <section className="py-24 bg-brand-dark text-white">

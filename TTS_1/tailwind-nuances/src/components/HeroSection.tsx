@@ -1,5 +1,3 @@
-import React from 'react'
-
 const HeroSection = () => {
   return (
     <header id="home" className="relative bg-brand-dark text-white pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
